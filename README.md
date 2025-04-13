@@ -1,1 +1,302 @@
-# mirza
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sony Corporation</title>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(-45deg, #1e3c72, #2a5298, #1e3c72, #2a5298);
+      background-size: 400% 400%;
+      animation: gradientMove 20s ease infinite;
+      color: #fff;
+      line-height: 1.6;
+      padding: 0 20px;
+    }
+
+    @keyframes gradientMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px 0;
+      text-align: center;
+      z-index: 1000;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s ease-in-out;
+    }
+
+    header h1 {
+      color: #00bfff;
+      font-size: 32px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 4px;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 3px;
+      background: #00bfff;
+      left: 0;
+      bottom: -5px;
+      transition: width 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #00bfff;
+    }
+
+    nav ul li a:hover::after {
+      width: 100%;
+    }
+
+    section {
+      margin: 60px auto;
+      background: rgba(255, 255, 255, 0.07);
+      padding: 30px;
+      max-width: 1000px;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+    }
+
+    section h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #00bfff;
+    }
+
+    ul li {
+      margin-bottom: 15px;
+    }
+
+    article {
+      margin-bottom: 20px;
+    }
+
+    .official-box {
+      background: #00bfff;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      border-radius: 10px;
+      margin: 30px auto;
+      max-width: 400px;
+      box-shadow: 0 6px 15px rgba(0, 191, 255, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s;
+    }
+
+    .official-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0, 191, 255, 0.5);
+    }
+
+    .official-box a {
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    form button {
+      background: #00bfff;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+
+    form button:hover {
+      background: #0078ff;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #ccc;
+      font-size: 14px;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s;
+    }
+
+    footer a:hover {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <h1>Sony Corporation</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#career">Career</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" data-aos="fade-up">
+    <h2>Welcome to Sony</h2>
+    <p>Sony is a global brand synonymous with innovation, entertainment, and cutting-edge technology. From electronics to music, movies, and games, Sony continues to shape the future with creativity and imagination.</p>
+  </section>
+
+  <section id="official" data-aos="zoom-in">
+    <h2>Visit Official Website</h2>
+    <div class="official-box">
+      <a href="https://www.sony.com" target="_blank">Go to Sony Official Website</a>
+    </div>
+  </section>
+
+  <section id="about" data-aos="fade-up">
+    <h2>About Sony</h2>
+    <p>Founded in 1946 in Tokyo by Masaru Ibuka and Akio Morita, Sony started as a small electronics shop and evolved into a global powerhouse. Its early innovation, such as Japan’s first transistor radio and the Walkman, shaped consumer technology as we know it.</p>
+    <p>Today, Sony's reach spans industries—from electronics to entertainment, from gaming to financial services. With its mission to "fill the world with emotion through the power of creativity and technology," Sony is both a cultural force and a technology pioneer.</p>
+  </section>
+
+  <section id="services" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <ul>
+      <li><strong>Electronics:</strong> Sony is known for premium TVs, cameras, headphones, and smartphones that combine aesthetics and function.</li>
+      <li><strong>Gaming:</strong> Through the PlayStation platform, Sony has revolutionized interactive entertainment globally.</li>
+      <li><strong>Music & Movies:</strong> Sony Music and Sony Pictures have launched iconic artists and blockbuster films.</li>
+      <li><strong>Anime:</strong> With Crunchyroll, Sony leads the global anime streaming scene.</li>
+      <li><strong>Financial Services:</strong> Sony offers banking, insurance, and fintech solutions primarily in Japan.</li>
+    </ul>
+  </section>
+
+  <section id="portfolio" data-aos="fade-up">
+    <h2>Portfolio Highlights</h2>
+    <ul>
+      <li><strong>PlayStation 5:</strong> Immersive, powerful gaming experience with cutting-edge hardware and DualSense controller.</li>
+      <li><strong>Sony WH Series:</strong> Market-leading noise-canceling headphones praised for comfort and sound.</li>
+      <li><strong>Alpha Cameras:</strong> Mirrorless camera innovation for photographers and videographers.</li>
+      <li><strong>Spider-Man Franchise:</strong> Cinematic success under Sony Pictures with Marvel collaboration.</li>
+      <li><strong>Vision-S Concept EV:</strong> Sony’s leap into smart mobility, blending entertainment and transport tech.</li>
+    </ul>
+  </section>
+
+  <section id="blog" data-aos="fade-up">
+    <h2>Latest News</h2>
+    <article>
+      <h3>AI Music Tool Launched</h3>
+      <p>April 2025 – Sony debuts an AI-driven music tool allowing artists to create songs in collaboration with artificial intelligence.</p>
+    </article>
+    <article>
+      <h3>VR2 Surpasses 10 Million Sales</h3>
+      <p>March 2025 – Sony's PlayStation VR2 hits a major milestone, becoming the most sold next-gen VR headset.</p>
+    </article>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>Email: support@sony.com</p>
+    <p>Phone: +81-3-6748-2111</p>
+    <p>Address: 1-7-1 Konan, Minato-ku, Tokyo, Japan</p>
+  </section>
+
+  <section id="career" data-aos="fade-up">
+    <h2>Careers at Sony</h2>
+    <p>At Sony, passion meets purpose. We support innovators, designers, engineers, and creators from all walks of life.</p>
+    <p>With offices around the world and careers in gaming, AI, entertainment, finance, and research, Sony empowers you to do your best work — in a culture built on respect, creativity, and collaboration.</p>
+    <p>Explore careers: <a href="https://www.sony.com/en/SonyInfo/Careers/" target="_blank">sony.com/careers</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sony Corporation. All rights reserved.</p>
+    <p>
+      <a href="#">Facebook</a> | 
+      <a href="#">Instagram</a> | 
+      <a href="#">LinkedIn</a>
+    </p>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+</body>
+</html>
